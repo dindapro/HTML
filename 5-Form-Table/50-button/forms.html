@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+<body>
+    <h1>Forms Demo</h1>
+    <p>latihan belajar form dan input</p>
+    <form action="/myform">
+        <div>
+            <label for="user">USERNAME :</label>
+            <input type="text" placeholder="enter username" id="user">
+        </div>
+        <div>
+            <label for="pass">PASSWORD :</label>
+            <input type="password" placeholder="enter password" id="pass">
+        </div>
+        <div>
+            <label for="colour">FAVORITE COLOUR :</label>
+            <input type="color" id="colour">
+        </div>
+        <div>
+            <!-- another labelling with nested -->
+            <label>ENTER YOUR NUM :
+                <input type="number" placeholder="000">    
+            </label>
+        </div>
+        <!-- button with default submit -->
+        <button>FirstBtn Ok</button>
+
+        <!-- button with type button wont submit -->
+        <button type="button">SecondBtn NotOk</button>
+        
+        <!-- another way to submit with input type -->
+        <input type="submit" value="ThirdBtn Ok">
+        
+    
+    </form>
+    
+</body>
+</html>

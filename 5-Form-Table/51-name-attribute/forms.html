@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+<body>
+    <h1>Forms Demo</h1>
+    <p>latihan belajar form dan input</p>
+    <form action="/myform">
+        <div>
+            <label for="user">USERNAME :</label>
+            <input type="text" placeholder="enter username" id="user" name="data1">
+        </div>
+        <div>
+            <label for="pass">PASSWORD :</label>
+            <input type="password" placeholder="enter password" id="pass" name="data2">
+        </div>
+        <div>
+            <label for="colour">FAVORITE COLOUR :</label>
+            <input type="color" id="colour" name="data3">
+        </div>
+        <div>
+            <!-- another labelling with nested -->
+            <label>ENTER YOUR NUM :
+                <input type="number" placeholder="000" name="data4">    
+            </label>
+        </div>
+        <!-- button with default submit -->
+        <button>FirstBtn Ok</button>
+
+        <!-- button with type button wont submit -->
+        <button type="button">SecondBtn NotOk</button>
+        
+        <!-- another way to submit with input type -->
+        <input type="submit" value="ThirdBtn Ok">
+        
+
+        <!-- 
+            data send with this format 
+            file:///D:/myform?data1=&data2=&data3=%23000000&data4=
+            file:///D:/myform?data1=teguh&data2=pass123&data3=%23ff881a&data4=09991
+
+
+         -->
+    
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Forms Validation</h1>
+
+    <form action="/myform">
+        <p>
+            <label for="name">First Name :</label>
+            <input type="text" placeholder="enter firstname" id="first" name="first" required>
+        </p>
+        <p>
+            <label for="Username">Username</label>
+            <input type="text" name="Username" id="Username" minlength="6" maxlength="6" required>
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+        </p>
+        <p>
+            <label for="website">Website</label>
+            <input type="url" id="website" name="website">
+        </p>
+        <button> Submit</button>
+    </form>
+</body>
+
+</html>
